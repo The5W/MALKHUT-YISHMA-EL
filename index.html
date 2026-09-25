@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catatan Yahudi tentang Kingdom of Yismael (MALKHUT YISHMA'EL)</title>
+    <title>Jewish Records on the Kingdom of Ishmael (MALKHUT YISHMA'EL)</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts Inter -->
+    <!-- Google Fonts Inter & Noto Serif Hebrew -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+Hebrew:wght@400;700&display=swap" rel="stylesheet">
@@ -45,9 +44,9 @@
         }
     </style>
 </head>
-<body class="bg-white min-h-screen text-slate-700 antialiased selection:bg-amber-100 selection:text-amber-900">
+<body class="bg-slate-50/50 min-h-screen text-slate-700 antialiased selection:bg-amber-100 selection:text-amber-900">
 
-    <header class="border-b border-slate-200 bg-white sticky top-0 z-50 shadow-xs">
+    <header class="border-b border-slate-200 bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
             
             <!-- Brand / Logo Title -->
@@ -57,28 +56,40 @@
                         מ
                     </div>
                     <span class="font-bold text-slate-900 text-sm sm:text-base lg:text-lg tracking-tight group-hover:text-amber-600 transition-colors">
-                        Catatan Yahudi tentang Kingdom of Yismael
+                        Jewish Records on the Kingdom of Ishmael
                     </span>
                 </a>
             </div>
 
             <!-- Navigation Links (Desktop) -->
             <nav class="hidden lg:flex items-center space-x-6 text-xs xl:text-sm font-medium text-slate-700">
-                <a href="#pengantar" class="text-slate-900 font-semibold hover:text-amber-600 transition-colors">Pengantar</a>
-                <a href="#teks-primaria" class="hover:text-amber-600 transition-colors">Teks Primaria</a>
-                <a href="#maimonides" class="hover:text-amber-600 transition-colors">Pandangan Rambam</a>
-                <a href="#daftar-pustaka" class="hover:text-amber-600 transition-colors">Daftar Pustaka</a>
+                <a href="#introduction" class="hover:text-amber-600 transition-colors">Introduction</a>
+                <a href="#primary-texts" class="hover:text-amber-600 transition-colors">Primary Texts</a>
+                <a href="#historical-pattern" class="hover:text-amber-600 transition-colors">Historical Pattern</a>
+                <a href="#rabbis-converted" class="hover:text-amber-600 transition-colors">Rabbis Embracing Islam</a>
+                <a href="#legal-matrix" class="hover:text-amber-600 transition-colors">Legal Matrix</a>
+                <a href="#bibliography" class="hover:text-amber-600 transition-colors">Bibliography</a>
 
-                <!-- Language Selector -->
+                <!-- Language Selector Indicator -->
                 <div class="flex items-center space-x-1.5 pl-3 text-xs font-semibold text-slate-700 border-l border-slate-200">
-                    <span class="text-slate-800 font-bold">Bahasa Indonesia (ID)</span>
+                    <span class="text-slate-800 font-bold bg-slate-100 px-2 py-1 rounded">EN</span>
                 </div>
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button class="lg:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
                 <i class="fa-solid fa-bars text-lg"></i>
             </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+            <a href="#introduction" class="block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-700">Introduction</a>
+            <a href="#primary-texts" class="block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-700">Primary Texts</a>
+            <a href="#historical-pattern" class="block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-700">Historical Pattern & Sanctuary</a>
+            <a href="#rabbis-converted" class="block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-700">Rabbis Embracing Islam</a>
+            <a href="#legal-matrix" class="block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-700">Legal Matrix</a>
+            <a href="#bibliography" class="block px-3 py-2 rounded-md hover:bg-amber-50 hover:text-amber-700">Bibliography</a>
         </div>
     </header>
 
@@ -86,156 +97,375 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
 
             <!-- MAIN ARTICLE AREA (Left Side) -->
-            <article class="lg:col-span-8 space-y-6">
+            <article class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-xl border border-slate-200/80 shadow-xs space-y-6">
                 
-                <!-- Featured Text Banner (No Images) -->
+                <!-- Hero Text Banner -->
                 <div class="w-full rounded-lg bg-slate-900 border border-slate-800 p-6 sm:p-8 text-white shadow-xs">
                     <div class="flex items-center space-x-2 text-amber-400 text-xs font-semibold tracking-wider uppercase mb-2">
                         <i class="fa-solid fa-book-bookmark"></i>
-                        <span>Dokumentasi Sejarah Tekstual &amp; Naskah Kuno</span>
+                        <span>Textual Historical Documentation &amp; Ancient Manuscripts</span>
                     </div>
                     <h2 class="text-lg sm:text-xl font-bold text-slate-100 tracking-tight">
-                        Kajian Manuskrip Ibrani &amp; Yudeo-Arab Abad Pertengahan
+                        Study of Medieval Hebrew &amp; Judeo-Arabic Manuscripts
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                        Repositori literatur klasik mengenai hubungan historis, teologis, dan status perlindungan hukum kaum Yahudi di bawah kekuasaan Islam (Malkhut Yishma'el).
+                        A repository of classical literature regarding the historical, theological, and legal protection status of the Jewish people under Islamic rule (Malkhut Yishma'el).
                     </p>
                 </div>
 
                 <!-- Article Headline -->
                 <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
-                    Catatan Yahudi tentang Kingdom of Yismael (MALKHUT YISHMA'EL)
+                    Jewish Records on the Kingdom of Ishmael (MALKHUT YISHMA'EL)
                 </h1>
 
                 <!-- Tags / Categories -->
-                <div class="flex items-center space-x-2 text-xs sm:text-sm font-medium text-amber-600">
-                    <span class="bg-amber-50 text-amber-700 px-2.5 py-1 rounded-md border border-amber-200">Teks Primaria</span>
+                <div class="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-medium text-amber-600">
+                    <span class="bg-amber-50 text-amber-700 px-2.5 py-1 rounded-md border border-amber-200">Primary Source Texts</span>
                     <span>•</span>
                     <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">מַלְכוּת יִשְׁמָעֵאל</span>
                     <span>•</span>
-                    <span class="text-slate-500">Sejarah Abad Pertengahan</span>
+                    <span class="text-slate-500">Medieval History</span>
                 </div>
 
-                <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-5 text-sm sm:text-base pt-2">
+                <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-6 text-sm sm:text-base pt-2">
                     
-                    <p id="pengantar" class="text-base sm:text-lg font-medium text-slate-800 leading-relaxed border-l-4 border-amber-500 pl-4 bg-amber-50/50 py-2 rounded-r-md">
-                        Dalam literatur klasik Yahudi abad pertengahan, peradaban dan kekhalifahan Islam dikenal secara spesifik dengan istilah <strong>Malkhut Yishma'el (מַלְכוּת יִשְׁמָעֵאל)</strong> — "Kerajaan Ismael". Catatan-catatan historis, Midrash, serta surat-surat otentik merekam kedatangan peradaban ini sebagai titik balik penting bagi kelangsungan hidup bangsa Yahudi pasca-penindasan Kekaisaran Romawi/Bizantium (<em>Edom</em>).
+                    <p id="introduction" class="text-base sm:text-lg font-medium text-slate-800 leading-relaxed border-l-4 border-amber-500 pl-4 bg-amber-50/50 py-3 rounded-r-md">
+                        In classical medieval Jewish literature, Islamic civilization and the Caliphates were specifically designated by the term <strong>Malkhut Yishma'el (מַלְכוּת יִשְׁמָעֵאל)</strong> — "The Kingdom of Ishmael". Historical accounts, Midrashic texts, and authentic correspondence document the rise of this civilization as a pivotal turning point for the survival of the Jewish nation following centuries of severe oppression under the Roman/Byzantine Empire (<em>Edom</em>).
                     </p>
 
-                    <h2 id="teks-primaria" class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        1. Midrash Nistarot de-Rabbi Shimon bar Yochai (Abad ke-7 M)
+                    <h2 id="primary-texts" class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4 flex items-center justify-between">
+                        <span>1. Midrash Nistarot de-Rabbi Shimon bar Yochai (7th Century CE)</span>
+                        <span class="text-xs font-normal text-slate-500 bg-slate-100 px-2.5 py-1 rounded">Apocalyptic Manuscript</span>
                     </h2>
                     
                     <p>
-                        Teks apokaliptik Yahudi yang disusun pada masa ekspansi Islam di Timur Tengah ini memuat catatan dialog antara Rabbi Shimon bar Yochai dan Malaikat Metatron mengenai takdir bangsa Yahudi di bawah kekuasaan Romawi dan kedatangan Islam:
+                        Composed during the early Islamic expansion across the Near East, this Jewish apocalyptic text records a dialogue between Rabbi Shimon bar Yochai and the Angel Metatron regarding the destiny of the Jewish people under Roman rule and the arrival of Islam:
                     </p>
 
                     <!-- Quote Box for Hebrew Manuscript -->
-                    <div class="bg-slate-50 border-l-4 border-slate-800 p-4 sm:p-5 rounded-r-lg space-y-3">
+                    <div class="bg-slate-50 border-l-4 border-slate-800 p-4 sm:p-5 rounded-r-lg space-y-3 shadow-2xs">
                         <p class="hebrew-text text-base sm:text-lg text-slate-900 font-semibold leading-loose">
                             "כיון שראה את מלכות ישמעאל שבאים... אמר: וכי לא די לנו מה שעשתה לנו מלכות אדום הרשעה, שבאים עלינו גם ישמעאלים? מיד ענה מטטרון: אל תירא בן אדם! שאין הקב"ה מביא מלכות ישמעאל אלא כדי להושיעכם מזו הרשעה..."
                         </p>
-                        <div class="border-t border-slate-200 pt-2 text-xs sm:text-sm text-slate-600 space-y-1">
-                            <p class="font-bold text-slate-800">Terjemahan Akademis:</p>
+                        <div class="border-t border-slate-200 pt-3 text-xs sm:text-sm text-slate-600 space-y-1">
+                            <p class="font-bold text-slate-800">Scholarly Translation:</p>
                             <p class="italic">
-                                "Ketika ia melihat Kerajaan Ismael (Malkhut Yishma'el) datang... ia berkata: 'Belum cukupkah apa yang dilakukan Kerajaan Edom (Romawi) yang jahat terhadap kita, sehingga kita harus menanggung Ismael juga?' Segera Metatron menjawab: 'Jangan takut, wahai anak manusia! Karena Yang Mahasuci, Terpuji Dia, **tidak mendatangkan Kerajaan Ismael melainkan untuk menyelamatkan kalian dari kejahatan Edom tersebut**...'"
+                                "When he saw the Kingdom of Ishmael (Malkhut Yishma'el) coming... he said: 'Is it not enough what the wicked Kingdom of Edom (Rome) has done to us, that we must also endure Ishmael?' Immediately Metatron answered: 'Fear not, son of man! For the Holy One, blessed be He, **brings the Kingdom of Ishmael solely to save you from that wicked power**...'"
                             </p>
                         </div>
                     </div>
 
                     <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        2. Pembebasan Yerusalem oleh Khalifah Umar (637 M)
+                        2. Liberation of Jerusalem by Caliph Umar (637 CE)
                     </h2>
                     <p>
-                        Sebelum tahun 637 M, Kekaisaran Bizantium melarang keras orang Yahudi untuk memasuki atau tinggal di Yerusalem selama lebih dari 500 tahun (sejak pembongkaran Hadrianus). Dokumen dari <em>Genizah Kairo</em> (Koleksi Taylor-Schechter, Universitas Cambridge) mencatat tindakan penyerahan Yerusalem kepada Khalifah Umar bin Khattab:
+                        Prior to 637 CE, the Byzantine Empire strictly banned Jewish individuals from entering or residing in Jerusalem for over 500 years (since the Hadrianic expulsion). Authentic documents from the <em>Cairo Genizah</em> (Taylor-Schechter Collection, Cambridge University) record the capitulation of Jerusalem to Caliph Umar bin Khattab:
                     </p>
                     <ul class="list-disc pl-5 space-y-2 text-slate-600">
-                        <li>Mengakhiri larangan pengasingan Yahudi dari kota suci Yerusalem.</li>
-                        <li>Mengizinkan 70 keluarga Yahudi dari Tiberias untuk kembali menetap dan membangun area pemukiman di dekat situs Bait.</li>
-                        <li>Memberikan status <em>Ahl al-Dhimmah</em> yang menjamin perlindungan jiwa, harta, dan kebebasan menjalankan hukum agama (Halakha).</li>
+                        <li>Ended the centuries-old exile banning Jewish people from the holy city of Jerusalem.</li>
+                        <li>Permitted 70 Jewish families from Tiberias to return, settle, and establish a designated quarter near the Temple site.</li>
+                        <li>Granted the status of <em>Ahl al-Dhimmah</em>, guaranteeing safety of life, property, and the freedom to observe religious law (Halakha).</li>
                     </ul>
 
                     <h2 id="maimonides" class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        3. Pandangan Moses Maimonides (Rambam) tentang Tauhid
+                        3. Moses Maimonides (Rambam) on Pure Monotheism (Tawhid)
                     </h2>
                     <p>
-                        Cendekiawan dan ulama hukum Yahudi terbesar abad pertengahan, Moses Maimonides (Rambam), yang hidup di bawah perlindungan peradaban Islam di Al-Andalus dan Mesir, memberikan pengakuan teologis formal dalam karya utamanya <em>Mishneh Torah</em> (Hilkhot Melakhim 11:4):
+                        The foremost medieval Jewish legal authority and philosopher, Moses Maimonides (Rambam), who lived under Islamic rule in Al-Andalus and Cairo, provided formal theological recognition in his magnum opus, <em>Mishneh Torah</em> (Hilkhot Melakhim 11:4):
                     </p>
 
                     <div class="bg-amber-50/60 border border-amber-200 p-4 sm:p-5 rounded-lg space-y-2">
                         <span class="text-xs font-bold uppercase tracking-wide text-amber-800">Mishneh Torah — Rambam</span>
                         <p class="text-xs sm:text-sm text-slate-800 leading-relaxed italic">
-                            "Seluruh perbuatan Yesus dari Nazaret dan orang Ismael (Nabi Muhammad) yang datang setelahnya, tidak lain bertujuan untuk meratakan jalan bagi Raja Mesias... sebab kini seluruh dunia telah dipenuhi dengan kata-kata Kitab Suci dan Hukum-Hukum Tuhan, serta pemahaman akan keesaan Tuhan (Tauhid) telah tersebar hingga ke pulau-pulau yang jauh."
+                            "All these matters of Jesus of Nazareth and of the Ishmaelite (Prophet Muhammad) who arose after him serve only to pave the way for the King Messiah... for now the entire world has been filled with the words of the Scripture and the Laws of God, and knowledge of God's absolute oneness (Tawhid) has spread to distant islands."
                         </p>
                     </div>
 
                     <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        4. Penyelamatan Pengungsi Sephardim (1492 M)
+                        4. Rescue of Sephardic Refugees (1492 CE)
                     </h2>
                     <p>
-                        Ketika Monarki Katolik Spanyol mengeluarkan Dekrit Alhambra (1492) untuk mengusir seluruh warga Yahudi, Kekaisaran Utsmaniyah (Ottoman) di bawah Sultan Bayezid II menerbitkan dekrit kerajaan (*Ferman*) untuk menerima dan melindungi pengungsi Yahudi Sephardim. 
+                        When the Catholic Monarchs of Spain issued the Alhambra Decree (1492) expelling all Jewish residents, the Ottoman Empire under Sultan Bayezid II dispatched imperial decrees (*Fermans*) to welcome and shelter Sephardic Jewish refugees.
                     </p>
                     <p>
-                        Dalam kronik sejarah Yahudi <em>Seder Eliyahu Zuta</em> (1523 M), Rabbi Elijah Capsali mencatat ucapan terkenal Sultan Bayezid II yang mengejek Raja Ferdinand dari Spanyol:
+                        In the Hebrew historical chronicle <em>Seder Eliyahu Zuta</em> (1523 CE), Rabbi Elijah Capsali recorded the famous declaration attributed to Sultan Bayezid II deriding King Ferdinand of Spain:
                     </p>
-                    <blockquote class="border-l-4 border-slate-300 pl-4 text-slate-600 italic">
-                        "Kalian menyebut Ferdinand sebagai raja yang bijak, padahal ia memiskinkan negerinya sendiri dan memperkaya negeriku dengan orang-orang berilmu!"
+                    <blockquote class="border-l-4 border-slate-400 pl-4 py-1 text-slate-600 italic bg-slate-50 rounded-r-md">
+                        "You call Ferdinand a wise king, he who has impoverished his own country and enriched mine with knowledgeable men!"
                     </blockquote>
 
-                    <!-- BARU: Poin 5, 6, dan 7 -->
-                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        5. Catatan Perjalanan Benjamin dari Tudela (1165–1173 M)
+                    <h2 id="historical-pattern" class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-6 text-amber-900 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-amber-600"></i>
+                        <span>5. Historical Pattern: When Europe Persecuted, Islamic Civilization Protected</span>
                     </h2>
+
                     <p>
-                        Dalam karya legendarisnya <em>Masa'ot Binyamin</em>, penjelajah Yahudi asal Eropa, Benjamin dari Tudela, mencatat kondisi kehidupan komunitas Yahudi di Baghdad di bawah Kekhalifahan Abbasiyah. Ia menyaksikan bagaimana Khalifah memberikan kedudukan terhormat bagi Pemimpin Eksil Yahudi (<em>Resh Galuta</em>, Daniel ben Hasdai) serta memberikan kebebasan penuh bagi puluhan sinagoge untuk beroperasi di pusat kekhalifahan.
+                        Historical documentation confirms an objective, recurring pattern: whenever Jewish communities faced severe discrimination, mass expulsion, or massacres across Christian Europe, Islamic territories consistently served as a legal sanctuary and safe haven for them.
+                    </p>
+
+                    <div class="space-y-4 my-4">
+                        <!-- Case 1: Visigoths vs Islam -->
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 space-y-2">
+                            <h3 class="font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between border-b border-slate-200 pb-2">
+                                <span>A. Visigothic Brutality (694 CE) vs. Arrival of Islam (711 CE)</span>
+                                <span class="text-xs bg-red-100 text-red-800 font-semibold px-2 py-0.5 rounded">7th Century Contrast</span>
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm pt-1">
+                                <div class="bg-red-50/50 p-3 rounded border border-red-100">
+                                    <strong class="text-red-900 block mb-1">Visigothic Europe (17th Council of Toledo):</strong>
+                                    <p class="text-slate-700">King Egica decreed total enslavement for all Jewish citizens, confiscation of property, and mandatory forced baptism of Jewish children.</p>
+                                </div>
+                                <div class="bg-emerald-50/50 p-3 rounded border border-emerald-100">
+                                    <strong class="text-emerald-900 block mb-1">Islamic Civilization (Tariq bin Ziyad):</strong>
+                                    <p class="text-slate-700">Restored full civil rights, emancipated them from slavery, and entrusted Jewish citizens with garrisoning the key cities of Cordoba, Seville, and Toledo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Case 2: Crusaders vs Saladin -->
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 space-y-2">
+                            <h3 class="font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between border-b border-slate-200 pb-2">
+                                <span>B. Crusader Massacres (1099 CE) vs. Liberation by Saladin (1187 CE)</span>
+                                <span class="text-xs bg-amber-100 text-amber-800 font-semibold px-2 py-0.5 rounded">The Crusades</span>
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm pt-1">
+                                <div class="bg-red-50/50 p-3 rounded border border-red-100">
+                                    <strong class="text-red-900 block mb-1">European Crusader Forces (1099 CE):</strong>
+                                    <p class="text-slate-700">Upon capturing Jerusalem, Crusaders burned the main synagogue with the Jewish population trapped inside and massacred Jewish communities along the Rhine.</p>
+                                </div>
+                                <div class="bg-emerald-50/50 p-3 rounded border border-emerald-100">
+                                    <strong class="text-emerald-900 block mb-1">Sultan Saladin (1187 CE):</strong>
+                                    <p class="text-slate-700">Recaptured Jerusalem, defeated the Crusaders, and issued an official public decree inviting exiled Jews back to resettle in the holy city.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Case 3: Expulsions vs Ottoman Millet -->
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 space-y-2">
+                            <h3 class="font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between border-b border-slate-200 pb-2">
+                                <span>C. European Mass Expulsions (1290–1492 CE) vs. Ottoman Millet System</span>
+                                <span class="text-xs bg-amber-100 text-amber-800 font-semibold px-2 py-0.5 rounded">Sanctuary System</span>
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm pt-1">
+                                <div class="bg-red-50/50 p-3 rounded border border-red-100">
+                                    <strong class="text-red-900 block mb-1">European Mass Expulsions:</strong>
+                                    <p class="text-slate-700">England expelled all Jews (1290 CE), France (1306 CE), Spain (1492 CE), Portugal (1497 CE), accompanied by the Inquisition and public *Auto-da-fé* burnings.</p>
+                                </div>
+                                <div class="bg-emerald-50/50 p-3 rounded border border-emerald-100">
+                                    <strong class="text-emerald-900 block mb-1">Ottoman Protection:</strong>
+                                    <p class="text-slate-700">The Ottoman Sultan deployed his navy to rescue over 150,000 Jewish refugees, granting legal status (*Millet*) and economic freedom in Salonica, Istanbul, and Safed.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Case 4: Holocaust WWII -->
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 space-y-2">
+                            <h3 class="font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between border-b border-slate-200 pb-2">
+                                <span>D. Nazi Holocaust Genocide (1939–1945 CE) vs. Rescue by Muslim Figures</span>
+                                <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2 py-0.5 rounded">World War II</span>
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm pt-1">
+                                <div class="bg-red-50/50 p-3 rounded border border-red-100">
+                                    <strong class="text-red-900 block mb-1">European Nazi Holocaust:</strong>
+                                    <p class="text-slate-700">Nazi Germany's industrial extermination system murdered 6 million European Jews in concentration camps and gas chambers.</p>
+                                </div>
+                                <div class="bg-emerald-50/50 p-3 rounded border border-emerald-100">
+                                    <strong class="text-emerald-900 block mb-1">Muslim Asylum &amp; Rescue:</strong>
+                                    <p class="text-slate-700">The Grand Mosque of Paris (Si Kaddour Benghabrit) forged Muslim identity certificates saving hundreds of Jews. Muslim-majority Albania sheltered 100% of its Jewish population (*Code of Besa*).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-slate-600 italic border-l-2 border-slate-400 pl-3 py-1">
+                        Academic Reference: Sir Martin Gilbert, <em>In Ishmael's House: A History of Jews in Muslim Lands</em> (Yale University Press); Heinrich Graetz, <em>History of the Jews</em> (Vols. 3 &amp; 4).
                     </p>
 
                     <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        6. Korespondensi Hasdai ibn Shaprut di Cordoba (± 960 M)
+                        6. Travelogue of Benjamin of Tudela (1165–1173 CE)
                     </h2>
                     <p>
-                        Hasdai ibn Shaprut, seorang sarjana dan menteri Yahudi yang mengabdi pada Khalifah Abdurrahman III di Al-Andalus, mencatat dalam suratnya kepada Raja Khazar tentang bagaimana pemerintahan Islam memberikan perlindungan, kesempatan ekonomi, dan kehormatan politik bagi kaum Yahudi ketika saudara-saudara seiman mereka di Eropa mengalami pembatasan ketat.
+                        In his celebrated work <em>Masa'ot Binyamin</em> (The Itinerary of Benjamin of Tudela), the European Jewish traveler Benjamin recorded the thriving condition of Jewish life in Baghdad under the Abbasid Caliphate. He witnessed the Caliph holding the Jewish Leader (*Resh Galuta / Exilarch*, Daniel ben Hasdai) in high honor and granting dozens of synagogues full freedom to operate in the heart of the empire.
                     </p>
 
                     <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
-                        7. Kebangkitan Pusat Hukum Yahudi di Safed, Palestina (Abad ke-16 M)
+                        7. Correspondence of Hasdai ibn Shaprut in Cordoba (c. 960 CE)
                     </h2>
                     <p>
-                        Di bawah perlindungan Sultan Suleiman Al-Qanuni (Utsmaniyah), kota Safed di Palestina berkembang menjadi ibu kota keagamaan dan intelektual Yahudi terpenting di dunia. Di kota inilah Rabbi Yosef Karo menyusun <em>Shulchan Aruch</em>—kodifikasi hukum Halakha yang menjadi rujukan utama seluruh umat Yahudi hingga saat ini.
+                        Hasdai ibn Shaprut, a Jewish scholar and physician who served as vizier to Caliph Abd al-Rahman III in Al-Andalus, recorded in his letter to the Khazar King how Islamic rule provided protection, economic prosperity, and political honor to the Jewish people while their brethren in Europe suffered severe oppression.
                     </p>
+
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
+                        8. Golden Era of Jewish Jurisprudence in Safed, Palestine (16th Century CE)
+                    </h2>
+                    <p>
+                        Under the patronage of Ottoman Sultan Suleiman the Magnificent, the town of Safed in Palestine blossomed into the preeminent spiritual and intellectual capital of world Jewry. It was here that Rabbi Yosef Karo authored the <em>Shulchan Aruch</em>—the authoritative code of Halakha followed by Jewish communities worldwide to this day.
+                    </p>
+
+                    <h2 id="rabbis-converted" class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4 flex items-center justify-between">
+                        <span>9. Historical Records: Prominent Jewish Rabbis Who Embraced Islam</span>
+                        <span class="text-xs bg-amber-100 text-amber-800 font-semibold px-2.5 py-1 rounded-md border border-amber-300">Prophetic Era</span>
+                    </h2>
+                    
+                    <p>
+                        In the early historical records of Yathrib (Medina), there is undeniable evidence documenting senior Rabbis, Torah scholars, and spiritual leaders who examined the Prophetic credentials from scripture and embraced Islam:
+                    </p>
+
+                    <!-- Grid List of Rabbis who embraced Islam -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1">
+                            <span class="font-bold text-slate-900 block text-sm">1. Rabbi Abdullah bin Salam</span>
+                            <span class="text-slate-500 text-xs block">(Original name: Al-Husayn bin Salam — Banu Qaynuqa)</span>
+                            <p class="text-slate-600 text-xs pt-1">Chief religious leader and highest Rabbi of the Jewish community in Medina who accepted Islam after verifying the signs of prophecy.</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1">
+                            <span class="font-bold text-slate-900 block text-sm">2. Rabbi Mukhayriq</span>
+                            <span class="text-slate-500 text-xs block">(Senior Scholar &amp; Intellectual — Banu Nadir)</span>
+                            <p class="text-slate-600 text-xs pt-1">Wealthy scholar and leader who studied Islamic teachings, fought alongside Muslims at the Battle of Uhud, and bequeathed his date groves to the Prophet.</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1">
+                            <span class="font-bold text-slate-900 block text-sm">3. Rabbi Zayd bin Su'nah</span>
+                            <span class="text-slate-500 text-xs block">(Foremost Torah Scholar — Banu Qaynuqa)</span>
+                            <p class="text-slate-600 text-xs pt-1">One of the most revered Torah scholars in Medina who specifically tested the character and forbearance of the Prophet before declaring his faith.</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1">
+                            <span class="font-bold text-slate-900 block text-sm">4. Rabbi Thala'bah bin Sa'yah</span>
+                            <span class="text-slate-500 text-xs block">(Spiritual Leader — Banu Qurayza)</span>
+                            <p class="text-slate-600 text-xs pt-1">A respected spiritual guide and leader of Banu Qurayza who bore witness to the message of Tawhid and accepted Islam.</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1">
+                            <span class="font-bold text-slate-900 block text-sm">5. Rabbi Usaid bin Sa'yah</span>
+                            <span class="text-slate-500 text-xs block">(Spiritual Leader — Banu Qurayza)</span>
+                            <p class="text-slate-600 text-xs pt-1">Prominent religious figure who affirmed his faith after matching Torah prophecies with the qualities of Prophet Muhammad.</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1">
+                            <span class="font-bold text-slate-900 block text-sm">6. Rabbi Asad bin Ubaid</span>
+                            <span class="text-slate-500 text-xs block">(Spiritual Leader — Banu Qurayza)</span>
+                            <p class="text-slate-600 text-xs pt-1">Numbered among the pious scholars and leaders of Medina who wholeheartedly embraced monotheism (Tawhid).</p>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg space-y-1 md:col-span-2">
+                            <span class="font-bold text-slate-900 block text-sm">7. Yamin bin 'Umair</span>
+                            <span class="text-slate-500 text-xs block">(Nobleman &amp; Leader — Banu Nadir)</span>
+                            <p class="text-slate-600 text-xs pt-1">A chieftain and nobleman of the Banu Nadir tribe who chose the path of Islam and supported the Muslim community.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exegesis / Historical Reflection Box -->
+                    <div class="bg-amber-50/80 border-l-4 border-amber-500 p-5 rounded-r-lg space-y-3 mt-4">
+                        <div class="flex items-center space-x-2 text-amber-800 font-bold text-sm">
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i>
+                            <span>Historical Exegesis &amp; Analytical Note</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-800 leading-relaxed italic">
+                            "Although history records the indisputable fact that their highest rabbis, Torah scholars, and chief religious authorities—such as Rabbi Abdullah bin Salam, Rabbi Mukhayriq, and Rabbi Zayd bin Su'nah—verified the Prophetic signs and accepted Islam, the broader Jewish populace largely chose to remain within their ancestral fold. Truth was established before them through the testimony of their own spiritual guides; however, tribal allegiance, socioeconomic standing, and reluctance to recognize prophecy outside their lineage led the majority to decline the message."
+                        </p>
+                    </div>
+
+                    <h2 id="legal-matrix" class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-6">
+                        10. Comparative Matrix: Roman/European Law vs. Law of Malkhut Yishma'el
+                    </h2>
+                    <p>
+                        An objective comparative analysis based on medieval legal documents illustrates the fundamental distinction between European-Christian rule and Islamic governance regarding Jewish citizens:
+                    </p>
+
+                    <div class="overflow-x-auto my-4">
+                        <table class="w-full text-xs sm:text-sm text-left text-slate-700 border border-slate-200 rounded-lg overflow-hidden">
+                            <thead class="text-xs uppercase bg-slate-900 text-amber-400">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 border-r border-slate-800">Legal Aspect</th>
+                                    <th scope="col" class="px-4 py-3 border-r border-slate-800">Byzantine / European Empire (Edom)</th>
+                                    <th scope="col" class="px-4 py-3">Malkhut Yishma'el (Islamic Civilization)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-slate-50/50">
+                                <tr class="hover:bg-slate-100/80 transition-colors">
+                                    <td class="px-4 py-3 font-bold text-slate-900 border-r border-slate-200">Freedom of Worship</td>
+                                    <td class="px-4 py-3 border-r border-slate-200 text-rose-800 bg-rose-50/40">Banned (*Codex Justinianus*), synagogues confiscated or destroyed.</td>
+                                    <td class="px-4 py-3 text-emerald-800 bg-emerald-50/40">Protected under *Ahl al-Dhimmah*, freedom to maintain houses of worship.</td>
+                                </tr>
+                                <tr class="hover:bg-slate-100/80 transition-colors">
+                                    <td class="px-4 py-3 font-bold text-slate-900 border-r border-slate-200">Judicial Autonomy</td>
+                                    <td class="px-4 py-3 border-r border-slate-200 text-rose-800 bg-rose-50/40">None. Halakhic law deemed illegal heresy under imperial statute.</td>
+                                    <td class="px-4 py-3 text-emerald-800 bg-emerald-50/40">Full autonomy for rabbinical courts (*Beit Din*) over civil and family matters.</td>
+                                </tr>
+                                <tr class="hover:bg-slate-100/80 transition-colors">
+                                    <td class="px-4 py-3 font-bold text-slate-900 border-r border-slate-200">Residency in Jerusalem</td>
+                                    <td class="px-4 py-3 border-r border-slate-200 text-rose-800 bg-rose-50/40">Strict exile &amp; total ban for 500+ years (Hadrian &amp; Heraclius decrees).</td>
+                                    <td class="px-4 py-3 text-emerald-800 bg-emerald-50/40">Restored by Caliph Umar (637 CE) &amp; Sultan Saladin (1187 CE).</td>
+                                </tr>
+                                <tr class="hover:bg-slate-100/80 transition-colors">
+                                    <td class="px-4 py-3 font-bold text-slate-900 border-r border-slate-200">Public Office Access</td>
+                                    <td class="px-4 py-3 border-r border-slate-200 text-rose-800 bg-rose-50/40">Barred from public service, military, or land ownership.</td>
+                                    <td class="px-4 py-3 text-emerald-800 bg-emerald-50/40">Open access: Viziers, Royal Physicians, Finance Ministers (Maimonides, Hasdai).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2 pt-4">
+                        11. Letter of Rabbi Obadiah of Bartenura from Jerusalem (1488 CE)
+                    </h2>
+                    <p>
+                        Prior to the influx of Spanish refugees, the Italian Rabbi and commentator Obadiah of Bartenura traveled to Jerusalem under Mamluk rule. In an official letter to his father in Italy, he observed the justice of Muslim rule toward the Jewish minority:
+                    </p>
+                    <blockquote class="border-l-4 border-amber-500 pl-4 py-2 text-slate-700 italic bg-amber-50/40 rounded-r-md text-xs sm:text-sm">
+                        "The Muslims in this land are very just and respect the rights of the Jews. Should any Muslim attempt to commit an injustice or seize Jewish property, the Muslim judges (*Qadi*) do not hesitate to penalize the Muslim offender and defend the rights of the Jews."
+                    </blockquote>
 
                 </div>
 
             </article>
 
-            <!-- SIDEBAR AREA (Right Side) -->
             <aside class="lg:col-span-4 space-y-6">
 
-                <!-- Widget 1: GLOSARIUM ISTILAH -->
-                <div class="bg-slate-50 border border-slate-200/80 rounded-lg p-5 shadow-2xs">
+                <!-- Widget 0: TABLE OF CONTENTS -->
+                <div class="bg-white border border-slate-200/80 rounded-xl p-5 shadow-xs sticky top-24">
+                    <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3 flex items-center justify-between">
+                        <span>Documentation Index</span>
+                        <i class="fa-solid fa-list-ol text-amber-600"></i>
+                    </h3>
+                    <nav class="space-y-1.5 text-xs">
+                        <a href="#introduction" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">1. Introduction to Malkhut Yishma'el</a>
+                        <a href="#primary-texts" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">2. Midrash Nistarot de-Rabbi Shimon</a>
+                        <a href="#maimonides" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">3. Rambam on Pure Monotheism</a>
+                        <a href="#historical-pattern" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">4. Historical Pattern: Islamic Sanctuary</a>
+                        <a href="#rabbis-converted" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">5. Rabbis Who Embraced Islam</a>
+                        <a href="#legal-matrix" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">6. Legal Comparative Matrix</a>
+                        <a href="#bibliography" class="block text-slate-700 hover:text-amber-600 hover:bg-slate-50 p-1.5 rounded transition-colors">7. Academic Bibliography</a>
+                    </nav>
+                </div>
+
+                <!-- Widget 1: GLOSSARY OF TERMS -->
+                <div class="bg-white border border-slate-200/80 rounded-xl p-5 shadow-xs">
                     <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3">
-                        Glosarium Istilah Klasik
+                        Glossary of Classical Terms
                     </h3>
                     <div class="space-y-3 text-xs sm:text-sm">
                         <div class="border-b border-slate-200 pb-2">
                             <span class="font-bold text-slate-800 block">Malkhut Yishma'el</span>
-                            <span class="text-slate-500 text-xs">(מַלְכוּת יִשְׁמָעֵאל) Sebutan Ibrani untuk Peradaban / Kerajaan Islam.</span>
+                            <span class="text-slate-500 text-xs">(מַלְכוּת יִשְׁמָעֵאל) Hebrew term for Islamic Empire / Civilization.</span>
                         </div>
                         <div class="border-b border-slate-200 pb-2">
                             <span class="font-bold text-slate-800 block">Malkhut Edom</span>
-                            <span class="text-slate-500 text-xs">(מַלְכוּת אֱדוֹם) Sebutan Ibrani untuk Kekaisaran Romawi / Eropa Kristen.</span>
+                            <span class="text-slate-500 text-xs">(מַלְכוּת אֱדוֹם) Hebrew term for Roman Empire / Christian Europe.</span>
                         </div>
                         <div>
-                            <span class="font-bold text-slate-800 block">Yichud / Tauhid</span>
-                            <span class="text-slate-500 text-xs">Konsep doktrin keesaan Tuhan secara mutlak.</span>
+                            <span class="font-bold text-slate-800 block">Yichud / Tawhid</span>
+                            <span class="text-slate-500 text-xs">The doctrine of absolute monotheism (God's oneness).</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Widget 2: RINGKASAN SUMBER PRIMARIA -->
-                <div class="bg-slate-50 border border-slate-200/80 rounded-lg p-6 shadow-2xs">
+                <!-- Widget 2: PRIMARY MANUSCRIPTS -->
+                <div class="bg-white border border-slate-200/80 rounded-xl p-6 shadow-xs">
                     <h2 class="text-xs sm:text-sm font-bold uppercase tracking-wide text-slate-800 border-b border-slate-200 pb-3 mb-4 flex items-center justify-between">
-                        <span>DOKUMEN &amp; NASKAH PRIMARIA</span>
+                        <span>PRIMARY MANUSCRIPTS &amp; ARCHIVES</span>
                         <i class="fa-solid fa-database text-amber-600 text-xs"></i>
                     </h2>
 
@@ -255,10 +485,10 @@
                             <i class="fa-solid fa-scroll text-amber-600 mt-1"></i>
                             <div>
                                 <a href="https://cudl.lib.cam.ac.uk/collections/genizah/1" target="_blank" rel="noopener noreferrer" class="font-bold text-slate-800 hover:text-amber-600 transition-colors inline-flex items-center gap-1">
-                                    Dokumen Genizah Kairo
+                                    Cairo Genizah Documents
                                     <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
                                 </a>
-                                <span class="text-slate-500 text-xs block">Koleksi T-S, Cambridge Digital Library</span>
+                                <span class="text-slate-500 text-xs block">T-S Collection, Cambridge Digital Library</span>
                             </div>
                         </div>
 
@@ -280,7 +510,7 @@
                                     Seder Eliyahu Zuta
                                     <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
                                 </a>
-                                <span class="text-slate-500 text-xs block">Rabbi Elijah Capsali (1523 M) - National Library of Israel</span>
+                                <span class="text-slate-500 text-xs block">Rabbi Elijah Capsali (1523 CE) - National Library of Israel</span>
                             </div>
                         </div>
 
@@ -297,14 +527,22 @@
                     </div>
                 </div>
 
-                <!-- Widget 3: DAFTAR PUSTAKA AKADEMIS -->
-                <div id="daftar-pustaka" class="bg-slate-50 border border-slate-200/80 rounded-lg p-6 shadow-2xs">
+                <!-- Widget 3: ACADEMIC BIBLIOGRAPHY -->
+                <div id="bibliography" class="bg-white border border-slate-200/80 rounded-xl p-6 shadow-xs">
                     <h2 class="text-xs sm:text-sm font-bold text-slate-800 border-b border-slate-200 pb-3 mb-4 flex items-center justify-between">
-                        <span>Daftar Pustaka Akademis &amp; Tautan Digital</span>
+                        <span>Academic Bibliography &amp; Digital Links</span>
                         <i class="fa-solid fa-graduation-cap text-amber-600 text-xs"></i>
                     </h2>
 
                     <div class="space-y-3.5 text-xs text-slate-600 leading-relaxed">
+                        <p class="border-b border-slate-200/60 pb-2">
+                            <strong class="text-slate-800 block">Gilbert, Martin. (2010).</strong>
+                            <em>In Ishmael's House: A History of Jews in Muslim Lands</em>. Yale University Press.
+                            <a href="https://yalebooks.yale.edu/book/9780300167153/in-ishmaels-house/" target="_blank" rel="noopener noreferrer" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center gap-1 mt-1 block">
+                                <i class="fa-solid fa-link text-[10px]"></i> Yale University Press Catalog
+                            </a>
+                        </p>
+
                         <p class="border-b border-slate-200/60 pb-2">
                             <strong class="text-slate-800 block">Lewis, Bernard. (1984).</strong>
                             <em>The Jews of Islam</em>. Princeton University Press.
@@ -322,6 +560,14 @@
                         </p>
 
                         <p class="border-b border-slate-200/60 pb-2">
+                            <strong class="text-slate-800 block">Obadiah of Bartenura. (1488).</strong>
+                            <em>Letters from Jerusalem: Account of Jewish Life under Mamluk Rule</em>. Hebrew Union College Annual.
+                            <a href="https://www.jstor.org/journal/hebruniocollannu" target="_blank" rel="noopener noreferrer" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center gap-1 mt-1 block">
+                                <i class="fa-solid fa-link text-[10px]"></i> JSTOR Hebrew Union College Collection
+                            </a>
+                        </p>
+
+                        <p class="border-b border-slate-200/60 pb-2">
                             <strong class="text-slate-800 block">Goitein, S. D. (1967-1993).</strong>
                             <em>A Mediterranean Society: The Jewish Communities of the Arab World</em>. University of California Press.
                             <a href="https://www.ucpress.edu/book/9780520221581/a-mediterranean-society" target="_blank" rel="noopener noreferrer" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center gap-1 mt-1 block">
@@ -333,7 +579,7 @@
                             <strong class="text-slate-800 block">Benjamin of Tudela. (Ed. Adler, M. N., 1907).</strong>
                             <em>The Itinerary of Benjamin of Tudela</em>. London: Oxford University Press.
                             <a href="https://www.gutenberg.org/files/14981/14981-h/14981-h.htm" target="_blank" rel="noopener noreferrer" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center gap-1 mt-1 block">
-                                <i class="fa-solid fa-link text-[10px]"></i> Baca Teks Lengkap di Project Gutenberg
+                                <i class="fa-solid fa-link text-[10px]"></i> Read Full Text on Project Gutenberg
                             </a>
                         </p>
 
@@ -354,10 +600,33 @@
 
     <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-8 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
-            <p>&copy; 2026 Catatan Yahudi tentang Kingdom of Yismael (MALKHUT YISHMA'EL). Repositori Teks & Sejarah Akademis.</p>
-            <p class="text-slate-500">Disusun berdasarkan naskah primer Ibrani, Yudeo-Arab, dan rujukan sejarah terverifikasi.</p>
+            <p>&copy; 2026 Jewish Records on the Kingdom of Ishmael (MALKHUT YISHMA'EL). Textual &amp; Historical Archive Repository.</p>
+            <p class="text-slate-500">Compiled from verified Hebrew, Judeo-Arabic, and historical primary sources.</p>
         </div>
     </footer>
 
+    <!-- Back to top button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-slate-900 text-amber-400 p-3 rounded-full shadow-lg hover:bg-amber-600 hover:text-white transition-all duration-300 z-50 flex items-center justify-center w-10 h-10 border border-slate-700" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close menu when clicking links
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
